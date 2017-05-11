@@ -15,7 +15,7 @@ NetExcutor
 
 ```java
 
-NetExcutor.executorCommonRequest(this, new CommonNetUIListener<Object>() {
+NetExcutor.executorCommonRequest(this, new CommonNetUIListener<Object>() { 
 
 
             @Override
@@ -57,3 +57,7 @@ NetExcutor.executorCommonRequest(this, new CommonNetUIListener<Object>() {
  ```
 * 一般的post请求
 默认配置
+ 
+ 
+ ## 解析方式
+ 默认json
