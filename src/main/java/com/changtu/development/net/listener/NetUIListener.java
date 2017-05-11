@@ -13,8 +13,7 @@ import java.lang.reflect.Type;
 
 /**
  * @version V1.0
- * @Title: Ui listener
- * @date 2016.12.05
+ *  2016.12.05
  */
 public abstract  class NetUIListener<T> {
 
@@ -94,13 +93,9 @@ public abstract  class NetUIListener<T> {
 
     /**
      * SUCCESS:服务器成功返回数据并GSON解析完成，业务处理
-     * <p/>
      * SERVER_ERROR:系统错误(例如gson解析错误)
-     * <p/>
      * NET_ERROR:网络错误
-     * <p/>
      * UI线程运行
-     * <p/>
      *
      * @param bean             the bean
      * @param netRequestStatus the net request status

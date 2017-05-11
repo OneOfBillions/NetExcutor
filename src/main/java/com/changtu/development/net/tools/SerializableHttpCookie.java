@@ -11,7 +11,7 @@ import java.net.HttpCookie;
  * 15/5/27.
  *
  * @version V1.0
- * @date 2017.05.11
+ *  2017.05.11
  */
 public class SerializableHttpCookie implements Serializable {
     /** Serial version uid. */

@@ -23,7 +23,7 @@ import java.util.concurrent.Executors;
  * Created by Administrator on 2016/12/6 0006.
  *
  * @version V1.0
- * @date 2016.12.07
+ *  2016.12.07
  */
 public abstract class NetTask implements Runnable {
 

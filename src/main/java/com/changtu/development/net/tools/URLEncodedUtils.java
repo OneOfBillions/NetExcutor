@@ -37,7 +37,7 @@ import java.util.List;
  * A collection of utilities for encoding URLs.
  *
  * @version V1.0
- * @date 2017.05.11
+ *  2017.05.11
  * @since 4.0
  */
 public class URLEncodedUtils {

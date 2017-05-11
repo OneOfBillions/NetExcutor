@@ -6,7 +6,7 @@ import java.lang.reflect.Type;
  * 网络返回数据解析类，具体可以实现 XML, JSON等格式的转换
  *
  * @version V1.0
- * @date 2016.12.07
+ *  2016.12.07
  */
 public interface NetDataParser {
 

@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
+repositories {
+    jcenter()
 
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -32,3 +35,14 @@ dependencies {
     compile 'com.squareup.okio:okio:1.11.0'
     compile 'com.squareup.okhttp:okhttp-android-support:2.7.5'
 }
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+	    classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
+    }
+}
+apply from: './bintray.gradle'

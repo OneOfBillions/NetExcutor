@@ -11,7 +11,7 @@ import java.util.List;
  * 通用的网络参数类.
  *
  * @version V1.0
- * @date 2016.12.06
+ *  2016.12.06
  */
 public class CommonNetParameter implements NetParameter {
 

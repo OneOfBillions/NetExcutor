@@ -23,11 +23,8 @@ public abstract  class CommonNetUIListener<T>  extends NetUIListener<T> implemen
 
     /**
      * 提交网络请求参数
-     * <p/>
      * return NULL，不发送网络请求，也不会有结果回调
-     * <p/>
      * UI线程运行
-     * <p/>
      *
      * @return the common params bean
      */

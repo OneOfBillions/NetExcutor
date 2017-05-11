@@ -13,9 +13,9 @@ import com.changtu.development.net.tools.NetUtils;
 /**
  * The Class CttripNetExcutor.
  *
- * @author 牛翔
+ * @author OneOfBillions
  * @version 1.0
- * @date 2015 -11-5
+ *  2015 -11-5
  */
 public class NetExcutor {
     /**
@@ -42,8 +42,6 @@ public class NetExcutor {
      * 返回数据解析:JsonDataParser
      *
      * 网络方式:post
-     *
-     * 网络配置:{@lingk NetOptions.DEFAULT}
      *
      * </pre>
      *
@@ -107,10 +105,7 @@ public class NetExcutor {
 
     /**
      * @version V1.0
-     * @Title: Run mode
-     * @date 2016.08.15
-     * @Title: Run mode
-     * @Title: Run mode
+     *  2016.08.15
      */
     public enum RunMode {
         /**

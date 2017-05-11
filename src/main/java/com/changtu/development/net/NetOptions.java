@@ -9,7 +9,7 @@ import static com.changtu.development.net.NetExcutor.RunMode.SINGLE_THREAD_POOL;
  * 网络请求方式配置
  *
  * @version V1.0
- * @date 2016.07.27
+ *  2016.07.27
  */
 public class NetOptions {
 

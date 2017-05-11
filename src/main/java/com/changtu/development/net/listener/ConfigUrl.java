@@ -4,7 +4,7 @@ package com.changtu.development.net.listener;
  *自配置URL.
  *
  * @version V1.0
- * @date 2016.12.07
+ *  2016.12.07
  */
 public interface ConfigUrl {
 

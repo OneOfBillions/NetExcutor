@@ -12,7 +12,6 @@ import com.changtu.development.net.parameter.NetParameter;
  * 范例:{@link OkHttpNetEngine}
  *
  * @version V1.0
- * @date 2016.12.02
  */
 public interface NetEngine {
     /**

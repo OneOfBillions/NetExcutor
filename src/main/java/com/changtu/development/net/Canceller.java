@@ -7,7 +7,7 @@ import com.changtu.development.net.core.NetEngine;
  * 网络请求取消者
  *
  * @version V1.0
- * @date 2016.12.03
+ *  2016.12.03
  */
 public class Canceller {
     /**

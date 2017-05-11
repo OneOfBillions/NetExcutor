@@ -14,7 +14,7 @@ import java.lang.reflect.Type;
  * 通用的网络任务.
  *
  * @version V1.0
- * @date 2016.12.07
+ *  2016.12.07
  */
 public class CommonNetTask extends NetTask {
     /**

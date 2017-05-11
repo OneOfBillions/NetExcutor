@@ -3,9 +3,9 @@ package com.changtu.development.net.tools;
 /**
  * 网络请求工具类.
  *
- * @author 牛翔
+ * @author OneOfBillions
  * @version 1.0
- * @date 2015 -4-23
+ *  2015 -4-23
  */
 public class NetUtils {
 
@@ -100,9 +100,9 @@ public class NetUtils {
     /**
      * The Enum OrderButtonOperation.
      *
-     * @author 牛翔
+     * @author OneOfBillions
      * @version 1.0
-     * @date 2015 -8-28
+     *  2015 -8-28
      */
     public enum NetRequestStatus {
         /**

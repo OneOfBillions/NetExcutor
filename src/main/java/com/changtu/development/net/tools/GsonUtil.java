@@ -10,9 +10,9 @@ import java.lang.reflect.Type;
 /**
  * GSON解析工具类.
  *
- * @author 牛翔
+ * @author OneOfBillions
  * @version 1.0
- * @date 2015 -4-23
+ *  2015 -4-23
  */
 public class GsonUtil {
     /** The Constant TAG. */

@@ -4,7 +4,7 @@ package com.changtu.development.net;
  * Created by Administrator on 2016/12/2 0002.
  *
  * @version V1.0
- * @date 2017.05.11
+ *  2017.05.11
  */
 public class NetException extends RuntimeException {
 

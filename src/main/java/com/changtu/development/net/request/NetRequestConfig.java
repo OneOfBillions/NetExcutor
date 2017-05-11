@@ -15,13 +15,12 @@ import com.changtu.development.net.parser.NetDataParser;
  *
  *
  * @version V1.0
- * @date 2016.12.07
+ *  2016.12.07
  */
 public class NetRequestConfig {
     /**
      * @version V1.0
-     * @Title: Method
-     * @date 2016.12.07
+     *  2016.12.07
      */
     public enum Method {
         /**
@@ -66,8 +65,7 @@ public class NetRequestConfig {
      *
      * 网络请求配置的构造器
      * @version V1.0
-     * @Title: Builder
-     * @date 2016.12.07
+     *  2016.12.07
      */
     public static class Builder {
         /**

@@ -9,7 +9,7 @@ import java.util.List;
  * Created by Administrator on 2016/3/1 0001.
  *
  * @version V1.0
- * @date 2017.05.11
+ *  2017.05.11
  */
 public interface NetParameter {
 

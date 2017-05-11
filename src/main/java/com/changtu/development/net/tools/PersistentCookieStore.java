@@ -34,7 +34,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * apache HttpClient/HttpContext if you prefer.
  *
  * @version V1.0
- * @date 2017.05.11
+ *  2017.05.11
  */
 public class PersistentCookieStore implements CookieStore {
 
@@ -266,7 +266,7 @@ public class PersistentCookieStore implements CookieStore {
     }
 
     /**
-     * Using some super basic byte array <-> hex conversions so we don't have to
+     * Using some super basic byte array hex conversions so we don't have to
      * rely on any large Base64 libraries. Can be overridden if you like!
      *
      * @param bytes byte array to be converted

@@ -4,7 +4,7 @@ package com.changtu.development.net;
  * 网络请求结果
  *
  * @version V1.0
- * @date 2016.12.02
+ *  2016.12.02
  */
 public class NetResponseInfo {
     /** Http code error. */

@@ -4,7 +4,6 @@ package com.changtu.development.net;
  * 基本价值对
  *
  * @version V1.0
- * @date 2016.12.02
  */
 public class BasicKeyValuePair implements KeyValuePair {
     /**

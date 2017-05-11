@@ -35,7 +35,6 @@ import javax.net.ssl.X509TrustManager;
  * 用okhttp网络框架实现{@link NetEngine}
  *
  * @version V1.0
- * @date 2016.12.02
  */
 public class OkHttpNetEngine implements NetEngine {
 
@@ -72,7 +71,7 @@ public class OkHttpNetEngine implements NetEngine {
     /**
      * @version V1.0
      * @Title: Ok http excutor
-     * @date 2016.12.02
+     *  2016.12.02
      * @Title: Ok http excutor
      */
     private static class OkHttpExcutor {
