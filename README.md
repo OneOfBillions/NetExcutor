@@ -50,10 +50,10 @@ NetExcutor.executorCommonRequest(this, new CommonNetUIListener<Object>() {
 ## 目前对以下需求进行了封装
 * 一般的get请求
 ```java
-            @Override
-            public NetRequestConfig.Method getMethod() {
-                return NetRequestConfig.Method.GET;
-            }
+ @Override
+ public NetRequestConfig.Method getMethod() {
+        return NetRequestConfig.Method.GET;
+ }
  ```
 * 一般的post请求
 默认配置
