@@ -6,7 +6,7 @@ NetExcutor
 * Android Studio
 	
 	```
-	compile 'com.changtu.development:net-excutor:1.0.0'
+	compile 'com.changtu.development:net-excutor:1.1.0'
 	```
   
 
