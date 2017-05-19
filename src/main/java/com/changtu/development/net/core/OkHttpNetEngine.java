@@ -184,26 +184,64 @@ public class OkHttpNetEngine implements NetEngine {
                 FormEncodingBuilder formEncodingBuilder = new FormEncodingBuilder();
                 //请求参数拼装
                 List<KeyValuePair> list = params.createParameters();
-                Request request;
-                if (POST.equals(method)) {
-                    if (list != null && !list.isEmpty()) {
-                        for (KeyValuePair keyValuePair : list) {
-                            formEncodingBuilder.add(keyValuePair.getKey(),
-                                    keyValuePair.getValue());
-
+              Request request =null;
+                switch (method){
+                    case GET:
+                        String url = params.getRequestURL();
+                        if (list != null && !list.isEmpty()) {
+                            url += "?"
+                                    + URLEncodedUtils.format(list, "UTF-8");
                         }
-                    }
-                    request = builder.url(params.getRequestURL())
-                            .post(formEncodingBuilder.build()).build();
-                } else {
-                    String url = params.getRequestURL();
-                    if (list != null && !list.isEmpty()) {
-                        url += "?"
-                                + URLEncodedUtils.format(list, "UTF-8");
-                    }
-                    request = builder.url(url).build();
-                }
+                        request = builder.url(url).build();
+                        break;
+                    case DELETE:
+                        if (list != null && !list.isEmpty()) {
+                            for (KeyValuePair keyValuePair : list) {
+                                formEncodingBuilder.add(keyValuePair.getKey(),
+                                        keyValuePair.getValue());
 
+                            }
+                        }
+                        request = builder.url(params.getRequestURL())
+                                .delete(formEncodingBuilder.build()).build();
+                        break;
+                    case POST:
+                        if (list != null && !list.isEmpty()) {
+                            for (KeyValuePair keyValuePair : list) {
+                                formEncodingBuilder.add(keyValuePair.getKey(),
+                                        keyValuePair.getValue());
+
+                            }
+                        }
+                        request = builder.url(params.getRequestURL())
+                                .post(formEncodingBuilder.build()).build();
+                        break;
+                    case PUT:
+                        if (list != null && !list.isEmpty()) {
+                            for (KeyValuePair keyValuePair : list) {
+                                formEncodingBuilder.add(keyValuePair.getKey(),
+                                        keyValuePair.getValue());
+
+                            }
+                        }
+                        request = builder.url(params.getRequestURL())
+                                .put(formEncodingBuilder.build()).build();
+                        break;
+                    default:
+                        if (list != null && !list.isEmpty()) {
+                            for (KeyValuePair keyValuePair : list) {
+                                formEncodingBuilder.add(keyValuePair.getKey(),
+                                        keyValuePair.getValue());
+
+                            }
+                        }
+                        request = builder.url(params.getRequestURL())
+                                .post(formEncodingBuilder.build()).build();
+                        break;
+
+
+
+                }
                 Call call = okHttpClient.newCall(request);
                 netEventInfo.setStartTime(String.valueOf(System.currentTimeMillis()));//网络耗时统计
                 Response response = call.execute();
@@ -255,26 +293,9 @@ public class OkHttpNetEngine implements NetEngine {
         }
     }
 
-    /**
-     * Request by post net response info.
-     *
-     * @param params the params
-     * @return the net response info
-     */
     @Override
-    public NetResponseInfo requestByPost(NetParameter params) {
-        return OkHttpExcutor.requestByMethod(params, taskTag, POST);
-    }
-
-    /**
-     * Request by get net response info.
-     *
-     * @param params the params
-     * @return the net response info
-     */
-    @Override
-    public NetResponseInfo requestByGet(NetParameter params) {
-        return OkHttpExcutor.requestByMethod(params, taskTag, GET);
+    public NetResponseInfo request(NetParameter params, String method) {
+       return OkHttpExcutor.requestByMethod(params, taskTag, TextUtils.isEmpty(method)?POST:method);
     }
 
     /**
@@ -290,10 +311,10 @@ public class OkHttpNetEngine implements NetEngine {
 
     }
 
-    /** Post. */
     private static final String POST = "POST";
-    /** Get. */
     private static final String GET = "GET";
+    private static final String PUT = "PUT";
+    private static final String DELETE = "DELETE";
 
 
 }
