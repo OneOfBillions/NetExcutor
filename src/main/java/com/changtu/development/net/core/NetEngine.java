@@ -21,21 +21,8 @@ public interface NetEngine {
      */
     void initContext(Context context);
 
-    /**
-     * Request by post net response info.
-     *
-     * @param params the params
-     * @return the net response info
-     */
-    NetResponseInfo requestByPost(NetParameter params);
+     NetResponseInfo request(NetParameter params,String method);
 
-    /**
-     * Request by get net response info.
-     *
-     * @param params the params
-     * @return the net response info
-     */
-    NetResponseInfo requestByGet(NetParameter params);
 
     /**
      * Add task tag.
