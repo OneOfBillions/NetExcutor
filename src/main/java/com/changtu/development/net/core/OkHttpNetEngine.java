@@ -7,6 +7,7 @@ import com.changtu.development.net.Canceller;
 import com.changtu.development.net.KeyValuePair;
 import com.changtu.development.net.NetResponseInfo;
 import com.changtu.development.net.parameter.NetParameter;
+import com.changtu.development.net.request.NetRequestConfig;
 import com.changtu.development.net.tools.PersistentCookieStore;
 import com.changtu.development.net.tools.URLEncodedUtils;
 import com.squareup.okhttp.Call;
@@ -170,8 +171,7 @@ public class OkHttpNetEngine implements NetEngine {
          * @param method  the method
          * @return the net response info
          */
-        public static NetResponseInfo requestByMethod(NetParameter params, Object taskTag, String
-                method) {
+        public static NetResponseInfo requestByMethod(NetParameter params, Object taskTag, NetRequestConfig.Method method) {
             NetResponseInfo netEventInfo = new NetResponseInfo();//返回信息
             Request.Builder builder = new Request.Builder();
             if (taskTag != null) {
@@ -294,8 +294,8 @@ public class OkHttpNetEngine implements NetEngine {
     }
 
     @Override
-    public NetResponseInfo request(NetParameter params, String method) {
-       return OkHttpExcutor.requestByMethod(params, taskTag, TextUtils.isEmpty(method)?POST:method);
+    public NetResponseInfo request(NetParameter params, NetRequestConfig.Method method) {
+       return OkHttpExcutor.requestByMethod(params, taskTag, method);
     }
 
     /**

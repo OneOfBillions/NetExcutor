@@ -6,6 +6,7 @@ import android.content.Context;
 import com.changtu.development.net.Canceller;
 import com.changtu.development.net.NetResponseInfo;
 import com.changtu.development.net.parameter.NetParameter;
+import com.changtu.development.net.request.NetRequestConfig;
 
 /**
  * 网络请求引擎，实现类一般是各种网络框架okhttp,httpclient.
@@ -21,7 +22,7 @@ public interface NetEngine {
      */
     void initContext(Context context);
 
-     NetResponseInfo request(NetParameter params,String method);
+     NetResponseInfo request(NetParameter params, NetRequestConfig.Method method);
 
 
     /**

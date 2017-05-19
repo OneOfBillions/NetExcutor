@@ -39,19 +39,8 @@ public class CommonNetTask extends NetTask {
         NetRequestConfig netRequest = getNetRequest();
         NetResponseInfo netResponseInfo;
         NetRequestConfig.Method method = netRequest.getMethod();
-        if (method != null) {
-            if (method == NetRequestConfig.Method.GET) {
-                netResponseInfo = engine.requestByGet
-                        (getParameter());
-            } else {
-                netResponseInfo = engine.requestByPost
-                        (getParameter());
-            }
-        } else {
-            throw new NetException("未指定请求方法 eg: post  get ");
-        }
-
-
+        netResponseInfo = engine.request
+                (getParameter(),netRequest.getMethod());
         String resultStr = null;
         NetUIListener netUIListener = getNetUiListener();
         Type type = netUIListener.getType();

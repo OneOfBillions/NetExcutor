@@ -29,7 +29,11 @@ public class NetRequestConfig {
         POST, /**
          * Get.
          */
-        GET
+        GET,
+
+        DELETE,
+
+        PUT
     }
 
     /**
